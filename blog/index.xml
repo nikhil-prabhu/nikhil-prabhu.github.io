@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Hello Friend</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Hello Friend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)</title>
+      <link>/blog/sap-irpa-mass-creation/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sap-irpa-mass-creation/</guid>
+      <description>Background As new recruits to the SAP Integration and Certification Center, my colleague Abhishek Malik and I were keen on making our mark in the team. The opportunity presented itself to us when 2 of our colleagues had to create a large number of users on certain SAP systems. Having been introduced to SAP Intelligent RPA (through courses on openSAP), we were excited to start working on using iRPA to automate this task.</description>
+    </item>
+    
+  </channel>
+</rss>

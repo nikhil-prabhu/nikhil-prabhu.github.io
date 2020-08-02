@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Hello Friend</title>
+    <link>/</link>
+    <description>Recent content in About on Hello Friend</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)</title>
+      <link>/blog/sap-irpa-mass-creation/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sap-irpa-mass-creation/</guid>
+      <description>Background As new recruits to the SAP Integration and Certification Center, my colleague Abhishek Malik and I were keen on making our mark in the team. The opportunity presented itself to us when 2 of our colleagues had to create a large number of users on certain SAP systems. Having been introduced to SAP Intelligent RPA (through courses on openSAP), we were excited to start working on using iRPA to automate this task.</description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/education/</guid>
+      <description>Birla Institute of Technology and Science  Qualification: MTech (Software Engineering) CGPA: NA Duration: 2019 - Present Location: Pilani, Rajasthan  Sri Krishna Arts and Science College  Qualification: BCA (Computer Applications) CGPA: 8 Duration: 2016 - 2019 Location: Coimbatore, Tamil Nadu  Stanes Anglo Indian Higher Secondary School  Qualification: HSC (Higher Secondary Certificate) Percentage: 75% Duration: 2014 - 2016 Location: Coimbatore, Tamil Nadu  Stanes Anglo Indian Higher Secondary School  Qualification: SSLC (Secondary School Leaving Certificate) Percentage: 90% Duration: 2007 - 2014 Location: Coimbatore, Tamil Nadu  </description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/experience/</guid>
+      <description>SAP Labs India  Role: DevOps and Cloud Engineer Team: API Management Multicloud Duration: May 2020 - Present Location: Bangalore, Karnataka  SAP Labs India  Role: Full Stack Developer Team: SAP Integration and Certification Center (SAP ICC) Duration: September 2019 - May 2020 Location: Bangalore, Karnataka  Amphisoft  Role: Intern Team: Web Design Team Duration: May 2018 - July 2018 Location: Coimbatore, Tamil Nadu  </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description> SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)  </description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/skills/</guid>
+      <description>Operating Systems  Microsoft Windows macOS GNU/Linux BSD  Toolset  GNU Emacs (Editor) Vim (Editor) Git (Version control)  Scripting Languages  Python Perl Shell (BASH and PowerShell) Emacs Lisp  Programming Languages  C/C++ Java Go  Markup  Markdown Org  Web  HTML/CSS Bootstrap JavaScript  Cloud  Microsoft Azure AWS  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01) :: Hello Friend — Welcome to my portfolio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Background As new recruits to the SAP Integration and Certification Center, my colleague Abhishek Malik and I were keen on making our mark in the team. The opportunity presented itself to us when 2 of our colleagues had to create a large number of users on certain SAP systems. Having been introduced to SAP Intelligent RPA (through courses on openSAP), we were excited to start working on using iRPA to automate this task." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/blog/sap-irpa-mass-creation/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:creator" content="Nikhil Prabhu" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01) :: Hello Friend">
+<meta property="og:description" content="Background As new recruits to the SAP Integration and Certification Center, my colleague Abhishek Malik and I were keen on making our mark in the team. The opportunity presented itself to us when 2 of our colleagues had to create a large number of users on certain SAP systems. Having been introduced to SAP Intelligent RPA (through courses on openSAP), we were excited to start working on using iRPA to automate this task." />
+<meta property="og:url" content="/blog/sap-irpa-mass-creation/" />
+<meta property="og:site_name" content="SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)" />
+
+  <meta property="og:image" content="https://blogs.sap.com/wp-content/uploads/2020/01/dashboard.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-01-20 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    nikhil@portfolio: ~ $
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">~/</a></li>
+        
+      
+        
+          <li><a href="/blog">~/Blog</a></li>
+        
+      
+        
+          <li><a href="/education">~/Education</a></li>
+        
+      
+        
+          <li><a href="/experience">~/Experience</a></li>
+        
+      
+        
+          <li><a href="/projects">~/Projects</a></li>
+        
+      
+        
+          <li><a href="/skills">~/Skills</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">~/</a></li>
+      
+    
+      
+        <li><a href="/blog">~/Blog</a></li>
+      
+    
+      
+        <li><a href="/education">~/Education</a></li>
+      
+    
+      
+        <li><a href="/experience">~/Experience</a></li>
+      
+    
+      
+        <li><a href="/projects">~/Projects</a></li>
+      
+    
+      
+        <li><a href="/skills">~/Skills</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/blog/sap-irpa-mass-creation/">SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-01-20 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nikhil Prabhu
+    </span>
+    
+  </div>
+
+  
+
+  
+    <img src="https://blogs.sap.com/wp-content/uploads/2020/01/dashboard.png" class="post-cover" alt="SAP Intelligent RPA: Mass creation of users on SAP Systems (using tcode su01)" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="background">Background<a href="#background" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>As new recruits to the <a href="https://www.sap.com/partner/certify-my-solution/software.html">SAP Integration and Certification Center</a>, my colleague <a href="https://people.sap.com/abhishek.malik">Abhishek Malik</a> and I were keen on making our mark in the team. The opportunity presented itself to us when 2 of our colleagues had to create a large number of users on certain SAP systems. Having been introduced to SAP Intelligent RPA (through <a href="https://open.sap.com/courses?q=rpa">courses</a> on <a href="https://open.sap.com/">openSAP</a>), we were excited to start working on using iRPA to automate this task.</p>
+<h1 id="use-case">Use Case<a href="#use-case" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="mass-creation-of-users-using-tcode-su01">Mass creation of users using tcode su01<a href="#mass-creation-of-users-using-tcode-su01" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In the SAP Logon application, the <strong>su01 transaction code</strong> is used for creating users. Generally, users must be created individually using this transaction code. This project is suitable for scenarios where there is a <strong>requirement for a mass creation of users</strong>.</p>
+<h1 id="problem-statement">Problem Statement<a href="#problem-statement" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Currently, users are created on SAP systems manually. Creating around 3 or 4 users manually may generally be easy. However, in most practical scenarios, <strong>users are created in bulk</strong> (around 50 or more at a time). In this case, a lot of time and manpower is wasted on a repetitive task. There is also a risk of <strong>inaccuracy due to human error</strong>. Automation of this task can save a lot of time and effort, and can also substantially improve precision.</p>
+<h1 id="the-solution-sap-intelligent-rpa">The Solution: SAP Intelligent RPA<a href="#the-solution-sap-intelligent-rpa" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>SAP Intelligent RPA can help automate the task of creating users on an SAP system. SAP iRPA Desktop Studio has inbuilt support for the <strong>SAP GUI connector</strong>, and can easily interface with the SAP Logon GUI application. The completed bot can be deployed on the <strong>SAP Intelligent RPA Factory</strong>, and can be scheduled to run as required. The required data (system name, template user name and new user name) is entered into a <strong>centrally located Excel spreadsheet</strong>, and the bot can automatically read this data and perform the automation task.</p>
+<h1 id="overview-of-workflow">Overview of Workflow<a href="#overview-of-workflow" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+
+  <figure class="left" >
+    <img src="https://blogs.sap.com/wp-content/uploads/2020/01/workflow-2.png"  alt="Overall workflow"   />
+    
+      <figcaption class="center" >Overall workflow</figcaption>
+    
+  </figure>
+
+
+<p>For a more detailed explanation of the workflow and deployment, check out the original blog post on <a href="https://blogs.sap.com/2020/01/20/sap-intelligent-rpa-mass-creation-of-users-on-sap-systems-using-tcode-su01/">SAP Blogs</a></p>
+<h1 id="learn-more">Learn More<a href="#learn-more" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<ul>
+<li><strong>openSAP</strong>: <a href="https://open.sap.com/courses/rpa1">SAP Intelligent Robotic Process Automation in a Nutshell</a></li>
+<li><strong>openSAP</strong>: <a href="https://open.sap.com/courses/rpa2">How to Build Bots with SAP Intelligent Robotic Process Automation</a></li>
+<li><strong>Product Information</strong>: <a href="https://contextor.eu/en/products/studio-ide/">Desktop Studio</a></li>
+<li><strong>SAP Help</strong>: <a href="https://help.sap.com/viewer/product/IRPA/Cloud/en-US">SAP Intelligent RPA Help</a></li>
+<li><strong>Documentation</strong>: <a href="https://contextor.eu/dokuwiki2/doku.php?id=start">Guides</a></li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
