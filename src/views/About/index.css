@@ -1,5 +1,6 @@
 .About {
   background-color: white;
+  border-bottom: 1px solid #f5f5f5;
   padding: 3em;
   text-align: center;
   display: flex;
