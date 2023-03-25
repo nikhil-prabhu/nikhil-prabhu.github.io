@@ -35,3 +35,7 @@ body {
 .bold {
   font-weight: 800 !important;
 }
+
+.underline {
+  text-decoration: underline !important;
+}

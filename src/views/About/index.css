@@ -1,0 +1,9 @@
+.About {
+  background-color: white;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
