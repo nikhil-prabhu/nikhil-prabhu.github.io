@@ -1,26 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {
+  HomeOutlined,
+  UserOutlined,
+  ThunderboltOutlined,
+  ExperimentOutlined,
+  InfoCircleOutlined,
+} from "@ant-design/icons";
+import type { MenuProps } from "antd";
+import { Menu } from "antd";
+import "./App.css";
 
-function App() {
+const items: MenuProps["items"] = [
+  {
+    label: "Home",
+    key: "home",
+    icon: <HomeOutlined />,
+  },
+  {
+    label: "About",
+    key: "about",
+    icon: <UserOutlined />,
+  },
+  {
+    label: "Skills",
+    key: "skills",
+    icon: <ThunderboltOutlined />,
+  },
+  {
+    label: "Projects",
+    key: "projects",
+    icon: <ExperimentOutlined />,
+  },
+  {
+    label: "Contact",
+    key: "contact",
+    icon: <InfoCircleOutlined />,
+  },
+];
+
+const App: React.FC = () => {
+  const [current, setCurrent] = useState("home");
+
+  const onClick: MenuProps["onClick"] = (e) => {
+    setCurrent(e.key);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu
+        onClick={onClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        items={items}
+        className="App-navbar"
+      />
+    </>
   );
-}
+};
 
 export default App;
