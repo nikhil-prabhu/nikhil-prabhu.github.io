@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Project: Run",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["run", "start"]
+    },
+    {
+      "label": "Project: Build",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["run", "build"]
+    },
+    {
+      "label": "Project: Deploy",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["run", "deploy"]
+    }
+  ]
+}
