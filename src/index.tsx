@@ -8,6 +8,8 @@ import { ConfigProvider, ThemeConfig } from "antd";
 const theme: ThemeConfig = {
   token: {
     colorPrimary: "#000000",
+    colorPrimaryBg: "#404040",
+    colorBgLayout: "#f5f5f5",
     borderRadius: 0,
   },
   algorithm: undefined,

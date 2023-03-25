@@ -10,6 +10,9 @@ import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import "./App.css";
 
+// Views
+import Jumbotron from "./views/Jumbotron";
+
 const items: MenuProps["items"] = [
   {
     label: "Home",
@@ -54,6 +57,8 @@ const App: React.FC = () => {
         items={items}
         className="App-navbar"
       />
+
+      <Jumbotron />
     </>
   );
 };
