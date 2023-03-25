@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HomeOutlined,
   UserOutlined,
@@ -47,6 +47,11 @@ const App: React.FC = () => {
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
   };
+
+  // Set window title on component mount
+  useEffect(() => {
+    document.title = "Hello friend";
+  }, []);
 
   return (
     <>
