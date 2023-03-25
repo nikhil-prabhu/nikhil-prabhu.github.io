@@ -12,6 +12,11 @@ a:visited {
   color: var(--colorPrimary) !important;
 }
 
+::selection {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
