@@ -13,6 +13,7 @@ import "./App.css";
 // Views
 import Jumbotron from "./views/Jumbotron";
 import About from "./views/About";
+import Skills from "./views/Skills";
 
 const items: MenuProps["items"] = [
   {
@@ -66,6 +67,7 @@ const App: React.FC = () => {
 
       <Jumbotron />
       <About />
+      <Skills />
     </>
   );
 };

@@ -1,0 +1,18 @@
+.Skills {
+  background-color: white;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.Skills-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
