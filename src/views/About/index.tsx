@@ -31,10 +31,9 @@ function About() {
             <span className="underline">Python</span>,&nbsp;
             <span className="underline">Ansible</span>&nbsp;and&nbsp;
             <span className="underline">Terraform</span>. On the side, I enjoy
-            developing command-line utilities and other fancy cross-platform GUI
-            programs using lower level languages like{" "}
-            <span className="underline">Rust</span>
-            ,&nbsp;
+            developing command-line utilities and cross-platform GUI programs
+            using lower level languages like&nbsp;
+            <span className="underline">Rust</span>,&nbsp;
             <span className="underline">Go</span> and&nbsp;
             <span className="underline">C/C++</span>. Overall, I love working on
             crazy new ideas using open-source technologies, and I try to
