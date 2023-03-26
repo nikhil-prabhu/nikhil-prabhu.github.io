@@ -46,7 +46,7 @@ export const skills = {
 			alt: "LaTeX",
 		}
 	],
-	"frameworks": [
+	frameworks: [
 		{
 			href: "https://react.dev/",
 			src: "https://img.shields.io/badge/react-F7F7F7.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
@@ -73,7 +73,7 @@ export const skills = {
 			alt: "Iced",
 		}
 	],
-	"platforms": [
+	platforms: [
 		{
 			href: "https://www.microsoft.com/windows/",
 			src: "https://img.shields.io/badge/windows-F7F7F7.svg?style=for-the-badge&logo=windows&logoColor=00ADEF",
@@ -91,11 +91,11 @@ export const skills = {
 		},
 		{
 			href: "https://webassembly.org/",
-			src: "https://img.shields.io/badge/webassembly-F7F7F7.svg?style=for-the-badge&logo=webassembly&logoColor=654FF0https://img.shields.io/badge/webassembly-F7F7F7.svg?style=for-the-badge&logo=webassembly&logoColor=654FF0",
+			src: "https://img.shields.io/badge/webassembly-F7F7F7.svg?style=for-the-badge&logo=webassembly&logoColor=654FF0",
 			alt: "WebAssembly",
 		}
 	],
-	"cloudPlatforms": [
+	cloudPlatforms: [
 		{
 			href: "https://aws.amazon.com/",
 			src: "https://img.shields.io/badge/AWS-F7F7F7.svg?style=for-the-badge&logo=amazon-aws&logoColor=FF9900",
@@ -117,7 +117,7 @@ export const skills = {
 			alt: "Alibaba Cloud",
 		}
 	],
-	"other": [
+	other: [
 		{
 			href: "https://git-scm.com/",
 			src: "https://img.shields.io/badge/git-F7F7F7.svg?style=for-the-badge&logo=git&logoColor=F05033",
