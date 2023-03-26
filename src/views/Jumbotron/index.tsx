@@ -21,7 +21,7 @@ function Jumbotron() {
         </Row>
 
         <Row justify="center">
-          <Title level={3} className="light">
+          <Title level={3} className="light" style={{ textAlign: "center" }}>
             Scroll down to know more about me
           </Title>
         </Row>
