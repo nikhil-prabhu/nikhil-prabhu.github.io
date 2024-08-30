@@ -21,7 +21,6 @@ export default function App() {
           <Outlet />
           <ScrollRestoration />
           <Scripts />
-          <LiveReload />
         </NextUIProvider>
       </body>
     </html>
