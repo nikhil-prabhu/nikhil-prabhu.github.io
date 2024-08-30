@@ -3,11 +3,12 @@ import {
   Meta,
   Outlet,
   Scripts,
-  LiveReload,
   ScrollRestoration,
 } from "@remix-run/react";
 import { NextUIProvider } from "@nextui-org/system";
 import "./tailwind.css";
+
+import NavBar from "./components/navbar/navbar";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       </head>
       <body>
         <NextUIProvider>
+          <NavBar />
           <Outlet />
           <ScrollRestoration />
           <Scripts />
