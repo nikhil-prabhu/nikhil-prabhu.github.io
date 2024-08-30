@@ -1,14 +1,9 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Scripts, ScrollRestoration } from "@remix-run/react";
 import { NextUIProvider } from "@nextui-org/system";
 import "./tailwind.css";
 
 import NavBar from "./components/navbar/navbar";
+import SnapScrollLayout from "./components/navbar/SnapScrollLayout";
 
 export default function App() {
   return (
@@ -20,7 +15,7 @@ export default function App() {
       <body>
         <NextUIProvider>
           <NavBar />
-          <Outlet />
+          <SnapScrollLayout />
           <ScrollRestoration />
           <Scripts />
         </NextUIProvider>
