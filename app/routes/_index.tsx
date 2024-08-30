@@ -2,8 +2,12 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Nikhil Prabhu | Developer + Engineer" },
+    {
+      name: "description",
+      content:
+        "The portfolio of Nikhil Prabhu - a Developer and DevOps/Cloud Engineer working on building optimized cloud automation solutions and utilities.",
+    },
   ];
 };
 
