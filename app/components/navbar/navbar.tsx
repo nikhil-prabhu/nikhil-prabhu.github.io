@@ -1,8 +1,16 @@
-import {Navbar as NextUINavbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {
+  Navbar as NextUINavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 
 export default function Navbar() {
+  // TODO: handle mobile screens
   return (
-    <NextUINavbar>
+    <NextUINavbar className="z-10 fixed top-0">
       <NavbarBrand>
         <p className="font-bold text-inherit">LOGO</p>
       </NavbarBrand>
@@ -23,9 +31,11 @@ export default function Navbar() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-        <NavbarItem>
-          <Link href="#" color="foreground">Contact</Link>
-        </NavbarItem>
+      <NavbarItem>
+        <Link href="#" color="foreground">
+          Contact
+        </Link>
+      </NavbarItem>
       <NavbarContent justify="end">
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
