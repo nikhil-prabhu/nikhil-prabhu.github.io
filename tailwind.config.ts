@@ -16,6 +16,10 @@ export default {
         "gotham-bold-italic": ["Gotham Bold Italic", "sans-serif"],
         "ipa-gothic": ["IPA Gothic", "sans-serif"],
       },
+      screens: {
+        "touch": { "raw": "(pointer: coarse)" },
+        "no-touch": { "raw": "(pointer: fine)" },
+      }
     },
     fontFamily: {
       "sans": ["Gotham Book"],
