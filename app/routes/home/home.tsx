@@ -13,6 +13,9 @@ export default function Home() {
         {/* TODO: implement matrix text animation for name */}
         <motion.p
           className="font-gotham text-2xl uppercase text-foreground-400"
+          initial={{
+            opacity: 0,
+          }}
           animate={{
             opacity: [0, 1],
           }}
