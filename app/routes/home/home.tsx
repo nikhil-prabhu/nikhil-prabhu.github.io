@@ -3,8 +3,8 @@ import { PiMouseSimpleBold } from "react-icons/pi";
 import {
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
+  MdOutlineTouchApp,
 } from "react-icons/md";
-import { IoFingerPrintOutline } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -88,8 +88,8 @@ export default function Home() {
           }}
           className="no-touch:hidden"
         >
-          <MdOutlineKeyboardArrowUp className="text-4xl text-foreground-600" />
-          <IoFingerPrintOutline className="text-4xl text-foreground-600" />
+          <MdOutlineKeyboardArrowUp className="text-8xl text-foreground-600" />
+          <MdOutlineTouchApp className="text-8xl text-foreground-600" />
         </motion.div>
       </div>
     </div>
